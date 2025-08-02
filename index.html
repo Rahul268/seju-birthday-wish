@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Seju!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts-container">
+        <div class="floating-heart">❤️</div>
+        <div class="floating-heart">💕</div>
+        <div class="floating-heart">💖</div>
+        <div class="floating-heart">❤️</div>
+        <div class="floating-heart">💕</div>
+        <div class="floating-heart">💖</div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header class="birthday-header">
+            <h1 class="birthday-title">🎉 Happy Birthday 🎉</h1>
+            <h2 class="friend-name">Seju!</h2>
+            <p class="birthday-message">Hope your special day is filled with happiness, laughter, and lots of cake! 🎂</p>
+        </header>
+
+        <main class="birthday-content">
+            <!-- Birthday Cake Section -->
+            <section class="cake-section">
+                <div class="cake-container">
+                    <div class="cake" id="birthdayCake">
+                        <div class="cake-layer cake-layer-1"></div>
+                        <div class="cake-layer cake-layer-2"></div>
+                        <div class="cake-layer cake-layer-3"></div>
+                        
+                        <!-- Candles -->
+                        <div class="candles-container">
+                            <div class="candle" data-candle="1">
+                                <div class="flame"></div>
+                                <div class="wick"></div>
+                                <div class="wax"></div>
+                            </div>
+                            <div class="candle" data-candle="2">
+                                <div class="flame"></div>
+                                <div class="wick"></div>
+                                <div class="wax"></div>
+                            </div>
+                            <div class="candle" data-candle="3">
+                                <div class="flame"></div>
+                                <div class="wick"></div>
+                                <div class="wax"></div>
+                            </div>
+                            <div class="candle" data-candle="4">
+                                <div class="flame"></div>
+                                <div class="wick"></div>
+                                <div class="wax"></div>
+                            </div>
+                            <div class="candle" data-candle="5">
+                                <div class="flame"></div>
+                                <div class="wick"></div>
+                                <div class="wax"></div>
+                            </div>
+                        </div>
+
+                        <!-- Cutting Line (hidden initially) -->
+                        <div class="cutting-line" id="cuttingLine"></div>
+                        
+                        <!-- Sparkle effects for cutting -->
+                        <div class="sparkles-container" id="sparklesContainer"></div>
+                    </div>
+
+                    <!-- Cake Crumbs -->
+                    <div class="crumbs-container" id="crumbsContainer"></div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="cake-actions">
+                    <button class="btn btn--primary" id="blowCandlesBtn">
+                        💨 Blow Candles
+                    </button>
+                    <button class="btn btn--primary" id="cutCakeBtn">
+                        🔪 Cut the Cake
+                    </button>
+                </div>
+
+                <!-- Cut Success Message -->
+                <div class="cut-message hidden" id="cutMessage">
+                    <h3>🎂 Cake is served! 🎂</h3>
+                    <p>SLICE! ✨</p>
+                </div>
+            </section>
+
+            <!-- Interactive Elements -->
+            <section class="interactive-section">
+                <button class="btn btn--secondary btn--lg" id="makeWishBtn">
+                    ⭐ Make a Wish ⭐
+                </button>
+
+                <!-- Balloons -->
+                <div class="balloons-container">
+                    <div class="balloon balloon-red" data-balloon="1">🎈</div>
+                    <div class="balloon balloon-blue" data-balloon="2">🎈</div>
+                    <div class="balloon balloon-yellow" data-balloon="3">🎈</div>
+                    <div class="balloon balloon-green" data-balloon="4">🎈</div>
+                    <div class="balloon balloon-purple" data-balloon="5">🎈</div>
+                    <div class="balloon balloon-pink" data-balloon="6">🎈</div>
+                </div>
+                <p class="balloon-instruction">Tap the balloons to pop them! 🎈</p>
+            </section>
+        </main>
+
+        <footer class="birthday-footer">
+            <p>🎁 Wishing you all the happiness in the world! 🎁</p>
+            <p>From all of us with lots of love ❤️</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
